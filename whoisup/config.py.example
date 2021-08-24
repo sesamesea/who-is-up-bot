@@ -1,0 +1,19 @@
+TOKEN = 'YOUR_TOKEN_GOES_HERE'
+WHITELIST_ENABLED = True
+OWNER_ID = 123456
+WHITELIST = [OWNER_ID, 987654]
+
+UPDATE_FREQUENCY = 5
+HOSTS = [
+    {'name': 'Host1',
+     'ip_list': ['192.168.1.101', '192.168.1.102'],
+     'color': tuple([0, 255, 0])},
+
+    {'name': 'Host2',
+     'ip_list': ['192.168.1.201'],
+     'color': tuple([255, 0, 0])}
+]
+
+YEELIGHT_ENABLED = True
+BULB_IP = '192.168.1.2'
+PULSES = 3
