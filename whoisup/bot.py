@@ -58,7 +58,6 @@ def _fetch_last_seen(update: Update, context: CallbackContext) -> int:
 
     subject_id = int(query.data.split(':')[1])
     subject = observer.get_subject(subject_id)
-    subject.ping()
 
     last_seen = subject.get_last_seen()
     if last_seen:

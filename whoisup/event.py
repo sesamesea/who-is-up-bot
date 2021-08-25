@@ -7,7 +7,6 @@ _subscribers = dict()
 class EventType(Enum):
     SUBJECT_UPDATE = auto()
     NOTIFICATION = auto()
-    YEELIGHT_NOTIFFICATION = auto()
 
 
 def subscribe(event_type: EventType, func) -> None:

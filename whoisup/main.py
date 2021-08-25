@@ -1,12 +1,11 @@
-import listener
 import observer
 from bot import start_bot
-from event import EventType, subscribe
+from listener import BotListener, YeelightListener
 
 
 def main() -> None:
-    subscribe(EventType.SUBJECT_UPDATE, listener.handle_subject_update)
-    subscribe(EventType.NOTIFICATION, listener.handle_notification)
+    BotListener().setup_handlers()
+    YeelightListener().setup_handlers()
 
     observer.load_from_config()
     observer.start_daemon()
